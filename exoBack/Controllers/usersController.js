@@ -87,7 +87,6 @@ export const getUserByEmail = async (req, res) => {
         if (!user) {
            return res.status(404).json({ message: "utilisateur non trouvé"})
         }
-console.log("L'objet user complet reçu de la BDD :", user);
         if (password !== user.password) {
          return res.status(401).json({message : "mot de passe incorrect"})
         }

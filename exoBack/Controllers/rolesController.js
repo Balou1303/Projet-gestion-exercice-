@@ -32,7 +32,6 @@ export const addRole = async (req, res) => {
 
 export const updateRole = async (req, res) => {
     const { libelleRole } = req.body;
-    console.log(libelleRole);
 
     const roleId = req.params.id;
     try {
